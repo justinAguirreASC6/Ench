@@ -24,8 +24,8 @@ body {
 #Ench{
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     display: flex;
-    justify-content: center;
-    background-color: gray;
+    position: relative;
+    background-color: rgb(0, 0, 0);
     -webkit-text-fill-color: aliceblue;
     -webkit-animation: color_change 10s infinite alternate;
 	-moz-animation: color_change 10s infinite alternate;
@@ -36,28 +36,41 @@ body {
     width: auto;
     
 }
-#menu{
-    display: flex;
-    justify-content: left;
-    padding-right: 1214px;
-    margin-bottom: 0.7%;
-    padding-top: 6px;
-    padding-left: 3px;
-    width: auto;
-    height: auto;
-}
+.menu{
+    background: rgba(17, 17, 17, 0.3);
+    margin-left: 43%;
+    height: 40px;
+    border: white;
 
+}
+.navhide:active{
+    border: none;
+    outline: none;
+}
+.navbar:focus{outline:0;}
+
+.navhide:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    padding-left: 0%;
+}
 #Username{
     padding-bottom: 50%;
 }
+.navhide{
+    position: relative;
+}
 #littleEnch{
     font-size: 25px;
-    background: rgba(17, 17, 17, 0.3);
     justify-content: center;
-    margin-top: 5px;
+    margin-top: -4px;
     padding: 10px;
-    margin: 0%;
-    position: absolute;
+    margin-left: 0;
+
 }
 
 #Demotxt{
@@ -188,16 +201,15 @@ body {
 
 
 #account{
+    cursor: pointer;
     position: relative;
     border-radius: 100%;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-            transition:         transform .8s ease-in-out; 
-            color: blue;
-            fill: currentColor;     
+        
     
 }
 
 #settings{
+    cursor: pointer;
     margin-top: 75%;
     position: relative;
     border-radius: 0%;
@@ -207,9 +219,9 @@ body {
 
 .navbar{
     display: block;
-    background: rgba(146, 144, 144,0.4);
-    height: 13.6%;
-    width: 4.2%;
+    background: rgba(255, 255, 255, 0.4);
+    height: 11.6%;
+    width: 3.5%;
     border-left-width: 2px;
     border-left-style: solid; 
     border-left-color: rgb(0, 0, 0); 
@@ -219,8 +231,8 @@ body {
     border-right-width: 2px;
     border-right-style: solid; 
     border-right-color: rgb(0, 0, 0);
-    border-top-width: 5px;
-    border-top-style: double;
+    border-top-width: 3px;
+    border-top-style: solid;
     border-top-color: rgb(0, 0, 0);   
     padding-left: 0%;
     visibility: hidden;
@@ -375,6 +387,23 @@ input[type=text] {
 @media (min-height: 300px) {
     .navbar{
       position: sticky;
+      top: 40px;
+    }
+  }
+
+  @media (min-height: 300px) {
+    #Ench{
+      position: sticky;
       top: 0;
     }
   }
+
+
+
+
+
+
+
+
+
+  
