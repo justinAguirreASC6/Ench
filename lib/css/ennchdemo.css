@@ -204,7 +204,9 @@ body {
     cursor: pointer;
     position: relative;
     border-radius: 100%;
-        
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+            padding-bottom: 15%;
     
 }
 

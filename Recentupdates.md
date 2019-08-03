@@ -7,3 +7,5 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 
 ennchdemo.html, ennchdemo.css | 8/2/19 | Made the navbar, and title bar sticky long with the navhide button.
+
+ennchdemo.html, ennchdemo.css | 8/2/19 | patch account button.
