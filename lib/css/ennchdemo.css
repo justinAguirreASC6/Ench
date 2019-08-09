@@ -1,13 +1,50 @@
+#keys{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    -webkit-text-fill-color: white;
+    background: rgb(0, 0, 0);
+    width: auto;
+}
+
+.cardicon{
+    float: right;
+    margin-left: 15px;
+}
+#wndropdown{
+    display: flex;
+    margin-top: -304px;
+    margin-left: 45px; 
+    z-index: 0;  
+    background: black;
+    height: 40px;
+}
+
+
+
+.card{
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-left-style: solid; 
+    border-left-color: rgb(0, 0, 0); 
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0); 
+    border-right-width: 2px;
+    border-right-style: solid; 
+    border-right-color: rgb(0, 0, 0); 
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: rgb(0, 0, 0);   
+
+}
 body {
-    background-color: #12475f;
-    -webkit-text-fill-color: aliceblue;
+    -webkit-text-fill-color: rgb(0, 0, 0);
     -webkit-animation: color_change2 20s infinite alternate;
 	-moz-animation: color_change2 20s infinite alternate;
 	-ms-animation: color_change2 20s infinite alternate;
 	-o-animation: color_change2 20s infinite alternate;
     animation: color_change2 20s infinite alternate;
-    height: 3000px;
-
+    min-height: 100% !important;
 }
 .signUp{
     background-color: #12475f;
@@ -17,59 +54,86 @@ body {
 	-ms-animation: color_change2 20s infinite alternate;
 	-o-animation: color_change2 20s infinite alternate;
     animation: color_change2 20s infinite alternate;
-    height: 100px;
     background-image: url("office.jpg");
-    background-size: 100%
+    background-size: 100%;
 }
 #Ench{
+    position: absolute;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     display: flex;
-    position: relative;
     background-color: rgb(0, 0, 0);
     -webkit-text-fill-color: aliceblue;
-    -webkit-animation: color_change 10s infinite alternate;
-	-moz-animation: color_change 10s infinite alternate;
-	-ms-animation: color_change 10s infinite alternate;
-	-o-animation: color_change 10s infinite alternate;
-    animation: color_change 10s infinite alternate;
     height: auto;
     width: auto;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    z-index: 3000;
 }
 .menu{
     background: rgba(17, 17, 17, 0.3);
     margin-left: 43%;
     height: 40px;
     border: white;
+    margin-bottom: 0%;
 
 }
-.navhide:active{
-    border: none;
-    outline: none;
+#Ench2{
+    position: absolute;
+    margin-top: 5px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: flex;
+    position: relative; 
+    -webkit-text-fill-color: aliceblue;
+    width: 20%;
+ 
 }
-.navbar:focus{outline:0;}
+
+
+.menu2{
+    position: absolute;
+    width: 5px;
+    margin: 0%;
+    width: 240px;
+    -webkit-text-fill-color: aliceblue;
+    background: black;
+    margin-bottom: 0%;
+    -webkit-transition: opacity 2s ease-out;
+    -moz-transition: opacity 2s ease-out;
+    -ms-transition: opacity 2s ease-out;
+    -o-transition: opacity 2s ease-out;
+        opacity: 0;
+        
+
+}
+
+.wnJumbo{
+    display: inline;
+    margin: 0%;
+    margin-bottom: 0%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 11px;
+    display: flex;  
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+
+}
 
 .navhide:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.4);
 }
-.navbar{
-    background-color: black;
-    display: flex;
-    padding-left: 0%;
-}
+    
 #Username{
     padding-bottom: 50%;
 }
-.navhide{
-    position: relative;
-}
+
 #littleEnch{
     font-size: 25px;
     justify-content: center;
     margin-top: -4px;
     padding: 10px;
-    margin-left: 0;
+    margin-left: 0%;
+    margin-right: auto;
 
 }
 
@@ -96,7 +160,7 @@ body {
     border-top-color: rgb(0, 0, 0);  
     position: absolute;
     background: rgba(47, 3, 51, 0.9);
-    width: 670px;
+    width: 650px;
 }
 
 #txtsub{
@@ -153,27 +217,16 @@ body {
     -webkit-text-fill-color:  rgb(170, 169, 169)
 }
 
-#News{
+#News, #rings{
     
     border-radius: 100%;
     position: relative;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
             transition:         transform .8s ease-in-out;
-    padding-bottom: 75%;
-    
+    padding-bottom: 75%
 }
 
-#rings{
-    
-    border-radius: 100%;
-    position: relative;
-    border-radius: 50%;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-            transition:         transform .8s ease-in-out;
-            padding-bottom: 75%;
- 
-}
 
 #messages{
     
@@ -220,8 +273,7 @@ body {
 }
 
 .navbar{
-    display: block;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 1);
     height: 11.6%;
     width: 3.5%;
     border-left-width: 2px;
@@ -238,44 +290,13 @@ body {
     border-top-color: rgb(0, 0, 0);   
     padding-left: 0%;
     visibility: hidden;
+    z-index: 3000;
+    position: absolute;
 }
 
-#News:hover{
+.nvicon:hover{
     -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-   
-}
-
-#rings:hover{
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
- 
-}
-
-#messages:hover{
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  
-}
-
-#rankings:hover{
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  
-}
-#join:hover{
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-
-}
-#account:hover{
-    -webkit-transform: rotate(46deg);
-    transform: rotate(46deg);
-}
-
-#settings:hover{
-    -webkit-transform: rotate(46deg);
-    transform: rotate(46deg);
+    transform: rotate(20deg); 
 }
 
 
@@ -334,6 +355,12 @@ body {
     animation: color_change2 10s infinite alternate;
     
 }
+#invalid{
+    display: flex;
+    background: red;
+    justify-content: center;
+    visibility: hidden;
+}
 #usernameInput{
     margin-top: 40px;
     width: 100%;
@@ -360,8 +387,13 @@ body {
     padding-top: 10px;
     padding-bottom: 20px;
 }
+#submit{
 
-#dontHave{
+}
+#popups{
+    background: black;
+    display: flex;
+    margin: 100%;
 }
 
 input[type=text] {
@@ -369,16 +401,95 @@ input[type=text] {
     color: rgb(70, 25, 67);
     
 }
+#adreel{
+    background: gray;
+   margin-top: -303px;
+   width: 50px;
+   height: 1057px;
+   float: right;
+   border-left-width: 2px;
+   border-left-style: solid; 
+   border-left-color: rgb(0, 0, 0); 
+   border-bottom-width: 2px;
+   border-bottom-style: solid;
+   border-bottom-color: rgb(0, 0, 0);
+   border-right-width: 2px;
+   border-right-style: solid; 
+   border-right-color: rgb(0, 0, 0);
+   border-top-width: 5px;
+   border-top-style: ridge;
+   border-top-color: rgb(0, 0, 0);
+   padding: 0%;
+}
+#reelcontent{
+    position: relative;
+    display: flex;
+    background: black;
+    height: 50px;
+    width: auto;    
+    -webkit-animation: myfirst 10s infinite; 
+    -webkit-animation-direction: alternate;
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+    margin-right: 0%;
+}
+#user{
+    width: 500px;
 
+    background: black;
+    display: flex;
+    height: 50px;
+    border-style: dashed;
+    border-left-width: 2px;
+    border-left-style: solid; 
+    border-left-color: rgb(0, 0, 0); 
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 0, 0);
+    border-right-width: 2px;
+    border-right-style: solid; 
+    border-right-color: rgb(0, 0, 0);
+    border-top-width: 5px;
+    border-top-style: ridge;
+    border-top-color: rgb(0, 0, 0);
+}
+.container{
 
+}
+@-webkit-keyframes myfirst {
+    1% { top: 0; top: 0px}
+    9% { top: 100px}
+    20% { top: 200px}
+    30% { top: 300px}
+    40% { top: 400px}
+    50% { top: 500px}
+    60% { top: 600px}
+    70% { top: 700px}
+    80% { top: 800px}
+    90% { top: 900px}
+    100% { top: 1000px}
+}
+@keyframes myfirst {
+    1% { top: 0; top: 0px}
+    9% { top: 100px}
+    20% { top: 200px}
+    30% { top: 300px}
+    40% { top: 400px}
+    50% { top: 500px}
+    60% { top: 600px}
+    70% { top: 700px}
+    80% { top: 800px}
+    90% { top: 900px}
+    100% { top: 1000px}
+  }
 @keyframes color_change{
     from {background-color: rgb(52, 9, 63)}
     to {background-color: rgb(0, 0, 0)}
 }
 
 @keyframes color_change2{
-    from {background-color: rgb(196, 148, 189)}
-    to {background-color: rgb(52, 9, 63)}
+    from {background-color: rgb(52, 9, 63)}
+    to {background-color: rgb(175, 127, 175)}
 }
 
 @keyframes color_change3{
@@ -401,11 +512,3 @@ input[type=text] {
   }
 
 
-
-
-
-
-
-
-
-  

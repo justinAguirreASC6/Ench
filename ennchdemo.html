@@ -5,6 +5,15 @@
     <script src="lib/js/ench.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="icon3.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+       $(document).ready(function(){
+  $(".flip").click(function(){
+    $(".panel").slideToggle("slow");
+    });
+    });
+    </script>
+  
   <head>
     <title>Ench</title>
       <body>
@@ -13,50 +22,93 @@
                 <a onclick="hide()" class="btn"><i class="fa fa-home"></i></a>            
               </div>
             <div  class="menu" >   
-              <h1 id="littleEnch">E N C H</h1>
+              <h1 id="littleEnch">E N C H</h1> 
           </div>
-       
+          
+        </div>
+        <div id="Ench2">
+            <div  class="menu2" >   
+              <h1 class="wnJumbo">W H A T ' S </h1> <h1 class="wnJumbo">N E W</h1>
+          </div>
+        </div>
+        <nav class="navbar">
+
+            <div id="News" class="nvicon">
+              <a href = "NewSite">
+                <img src="assets\NavbarIcons\hotel.svg" width="39" height="32">   
+               
+                </a>
+            </div> 
+           
+            <div id="rings" class="nvicon">
+              <a href = "ringsSite">
+                <img src="assets\NavbarIcons\notification.svg" width="39" height="32">
+              </a>
+             
+            </div>
+      
+            <div id="messages" class="nvicon">
+              <a href = "messagesSite">
+              <img src="assets\NavbarIcons\comment.svg" width="39" height="32">
+              </a>
+            </div>
+      
+            <div id="rankings" class="nvicon">
+              <a href = "rankingsSite">
+              <img src="assets\NavbarIcons\line-chart.svg" width="39" height="32">
+              </a>
+            </div>
+            <div id="account" class="nvicon">
+              <a>
+              <img src="assets\NavbarIcons\acc.svg" width="39" height="32">
+              </a>
+            </div>
+      
+            <div  id="settings" class="nvicon">
+              <a>
+              <img src="assets\NavbarIcons\gear-loading.svg" width="39" height="32">
+              </a>        
+            </div>
+              </nav> 
+      <!-- <div id="adreel">
+        <div id="reelcontent">
+        </div>
+      </div> -->
+      <div id="wndropdown">
+          <a href="#" style="color: white">B y  C a t e g o r y </a>
+          <a href="#"style="color: white"> P o p u l a r</a>
+          <a href="#"style="color: white"> W h a t's  H o t</a>
+          <a href="#"style="color: white"> </a>
         </div>
 
+
+
+      <div class="card" style="max-width: 30rem;">
+          <div class="card-header"><img src="assets/png/W-Icon-White-Blue-Circle-Outline.png"  width="29" height="27"> Footi
+            
+              <img class="cardicon" src="assets\NavbarIcons\blogging.svg" width="19" height="32">  
+              <img class="cardicon" src="assets\NavbarIcons\notification.svg" width="20" height="32">
+              <img class="cardicon" src="assets\NavbarIcons\e-commerce-like-heart.svg" width="19" height="32">
+              <img class="cardicon" src="assets\NavbarIcons\share.svg" width="20" height="32">
       
+          </div>
+   
+            <div id="keys"> 
+              <div> 
+                <p>
+                  Tech
+                </p>
+                <p>
 
-      <nav class="navbar">
-          
-      <div id="News">
-        <a href = "NewSite">
-          <img src="assets\NavbarIcons\hotel.svg" width="39" height="32">
-          </a>
-      </div> 
+                </p>
+              </div>
+            </div>
 
-      <div id="rings">
-        <a href = "ringsSite">
-          <img src="assets\NavbarIcons\alarm.svg" width="39" height="32">
-        </a>
-      </div>
-
-      <div id="messages">
-        <a href = "messagesSite">
-        <img src="assets\NavbarIcons\comment.svg" width="39" height="32">
-        </a>
-      </div>
-
-      <div id="rankings">
-        <a href = "rankingsSite">
-        <img src="assets\NavbarIcons\line-chart.svg" width="39" height="32">
-        </a>
-      </div>
-      <div id="account">
-        <a>
-        <img src="assets\NavbarIcons\acc.svg" width="39" height="32">
-        </a>
-      </div>
-
-      <div  id="settings">
-        <a>
-        <img src="assets\NavbarIcons\gear-loading.svg" width="39" height="32">
-        </a>        
-      </div>
-        </nav> 
+            <div class="card-header" id="reps"> representatives</div>
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h3 class="readmore">. . .</h3>
+            </div>
       </body>
   </head>
 </html>
