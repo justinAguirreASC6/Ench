@@ -1,8 +1,279 @@
+
+
+.biobox{
+   background: black;
+   width: 1000px;
+
+}
+#alone{
+    font-size: 25px;    
+    margin-top: 530px;
+    
+    position: absolute;
+    z-index: 2;
+    background: black;
+    padding-left: 300px;
+    width: 100%;
+
+}
+
+
+#boxuser{
+    font-size: 10px;
+    -webkit-text-fill-color: black;
+}
+.postshead{
+    position: absolute;
+    z-index: 0;
+    margin-top: 35%;
+    width: 100%;
+  
+  
+}
+#underbio{
+    -webkit-text-fill-color: black;
+    float: right;
+}
+
+#picacc{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding-right: 10px;
+    padding-left: 10px; 
+
+}
+#picacc:hover{
+    background: rgb(139, 139, 139);
+}
+#posticon{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+#posticon:hover{
+    background: rgb(139, 139, 139);
+}
+
+#picas{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+
+#picas:hover{
+    background: rgb(139, 139, 139);
+}
+#picstats{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+#picstats:hover{
+    background: rgb(139, 139, 139);
+}
+#posttext{
+    display: flex;
+    font-size: 25px;
+    -webkit-text-fill-color: black;
+    background: rgb(207, 207, 207);
+        justify-content: space-evenly;
+        -webkit-animation: color_change 20s infinite alternate-reverse;
+        -moz-animation: color_change 20s infinite alternate-reverse;
+        -ms-animation: color_change 20s infinite alternate-reverse;
+        -o-animation: color_change 20s infinite alternate-reverse;
+        animation: color_change 20s infinite alternate-reverse; 
+
+}
+#pic{
+    position: absolute;
+    margin-left: 88.1%;
+    z-index: 2;
+    width: 150px;
+    border-radius: 100%;
+    float: right;
+    border-left-width: 2px;
+    border-left-style: solid; 
+    border-left-color: rgb(255, 255, 255); 
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255); 
+    border-right-width: 2px;
+    border-right-style: solid; 
+    border-right-color:  rgb(255, 255, 255); 
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color:  rgb(255, 255, 255);    
+}
+#picbox{
+    border-radius: 12px;
+    margin-top: 2%;
+    margin-left: 3.5%;   
+    position: absolute;
+    width: 92.5%;
+    height: 100%;
+   background: white;
+}
+#eatit{
+    margin-top: 1px;
+    justify-content: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background: rgba(17, 17, 17, 0.3);  
+    width: auto;
+
+
+}
+#eatitmsg{
+    font-size: 20px;
+    background: black;
+    width: 200px;
+    justify-content: center;
+    margin-left: 45%;
+    padding-left: 30px;
+}
+
+
+#commentsection{
+    background: rgb(255, 255, 255);
+    height: auto;
+    width: 299.9px;  
+    margin-top: -300px; 
+    float: right;
+    border-top-style: groove;
+    margin-right: 80px;
+    border-radius: 2%;
+}
+#cminput::placeholder {
+    color: red;
+  }
+.usercomment1{
+    display: flex;
+    height: 30px;
+    font-size: 12px;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.usern{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.reply{
+    float: right;
+    font-size: 10px;
+    margin-right: 10px;
+}
+.cmt{
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+.like1{
+    margin-left: 20px;
+    
+}
+
+#undera{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+#underb{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+.person1{
+    border-radius: 100%;
+}
+
+#person1cmt{
+    width: 0 auto;
+    font-size: 13px;
+}
+
+#postbutton{
+
+}
+#cmtmsgs{
+    background: rgba(255, 255, 255, 0.514);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(192, 192, 192);
+    height: auto;
+    width: auto;  
+    border-radius: 10%;
+    
+}
+
+#cmtinput{
+    margin-top: 1px;
+    margin-left: 2px;
+    outline: none;
+    width: 295.9px;
+    background: white;
+    border: none;
+}
+#goal{
+    margin-left: 200px;
+}
+#contact{
+    flex-direction: column;
+    margin-left: 30px;
+}
+#goaltxt{
+    font-size: 12px;
+    margin-left: -160px;
+}
+#contactnumber{
+
+    margin-left: 110px;
+}
+
+#reddde{
+    height: 300px;
+}
+
+
 #keys{
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    -webkit-text-fill-color: white;
-    background: rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(238, 238, 238);
     width: auto;
+    height: 20px;
+}
+.story{
+    display: none;
+    justify-content: center;
+}
+#likes{
+    display: table;
+    justify-content: row;
+    font-size: 10px; 
+    
+}
+#date{
+    padding-left: 317px;
+    display: table-cell;
+}
+.card-header{
+    margin-bottom: -20px;
+}
+.slideshow-container{
+    padding-top: 20px;
+}
+.ok{
+    border-radius: 100%;
+    justify-content: space-evenly;
+    border-bottom-width: 1px;
+}
+
+
+#card2{
+    width: 480px;
+    margin-left: 400px;
+    margin-top: -300px;
+}
+
+.card-text{
+    background: rgba(17, 17, 17, 0.6);
+    margin-top: -9px;
 }
 
 .cardicon{
@@ -14,28 +285,54 @@
     margin-top: -304px;
     margin-left: 45px; 
     z-index: 0;  
-    background: black;
+    background: rgb(0, 0, 0);
     height: 40px;
+  
 }
 
 
 
-.card{
-    margin: 0 auto;
-    background: rgb(255, 255, 255);
-    border-left-width: 2px;
-    border-left-style: solid; 
-    border-left-color: rgb(0, 0, 0); 
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(0, 0, 0); 
-    border-right-width: 2px;
-    border-right-style: solid; 
-    border-right-color: rgb(0, 0, 0); 
-    border-top-width: 5px;
-    border-top-style: solid;
-    border-top-color: rgb(0, 0, 0);   
+#dd{
+    border: none;
+   display: flex;
+   justify-content: center;
+  cursor: pointer;
+  margin-left: 160px;
+}
+#reps{
+    
+    display: flex;
+    font-size: 11px;
+    -webkit-text-fill-color: #690020;
+    margin-bottom:  10px;
+}
 
+#tagcont{
+    height: 21px;
+    display: flex;  
+    background: radial-gradient(rgb(255, 255, 255))
+}
+#tech{
+    display: table-cell;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    -webkit-text-fill-color: black;
+    background: rgb(126, 195, 228);
+    width: 20px;
+    height: 19px;
+    border-radius: 100%;
+}
+#health{
+    display: table-cell;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    -webkit-text-fill-color: black;
+    background: rgb(170, 47, 47);
+    width: 20px;
+    height: 19px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+.card{
+    background: rgb(255, 255, 255);
 }
 body {
     -webkit-text-fill-color: rgb(0, 0, 0);
@@ -44,7 +341,8 @@ body {
 	-ms-animation: color_change2 20s infinite alternate;
 	-o-animation: color_change2 20s infinite alternate;
     animation: color_change2 20s infinite alternate;
-    min-height: 100% !important;
+    max-width: 3000px;
+    min-height: 1000px;
 }
 .signUp{
     background-color: #12475f;
@@ -56,6 +354,11 @@ body {
     animation: color_change2 20s infinite alternate;
     background-image: url("office.jpg");
     background-size: 100%;
+}
+#somerandomdivthatreallydoesntneedtobeherebutitsforaestheticpurposes{
+    background: black;
+    width: auto;
+    height: 6px;
 }
 #Ench{
     position: absolute;
@@ -74,6 +377,13 @@ body {
     height: 40px;
     border: white;
     margin-bottom: 0%;
+    
+
+}
+#Whatsnew{
+    padding-left: 10px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
 
 }
 #Ench2{
@@ -290,11 +600,11 @@ body {
     border-top-color: rgb(0, 0, 0);   
     padding-left: 0%;
     visibility: hidden;
-    z-index: 3000;
+    z-index: 1;
     position: absolute;
 }
 
-.nvicon:hover{
+.nvicon:hover, .cardicon:hover{
     -webkit-transform: rotate(20deg);
     transform: rotate(20deg); 
 }
@@ -322,11 +632,11 @@ body {
     border-top-width: 5px;
     border-top-style: solid;
     -webkit-text-fill-color: aliceblue;
-    -webkit-animation: color_change 10s infinite alternate;
-	-moz-animation: color_change 10s infinite alternate;
-	-ms-animation: color_change 10s infinite alternate;
-	-o-animation: color_change 10s infinite alternate;
-    animation: color_change 10s infinite alternate;
+    -webkit-animation: color_change3 10s infinite alternate;
+	-moz-animation: color_change3 10s infinite alternate;
+	-ms-animation: color_change3 10s infinite alternate;
+	-o-animation: color_change3 10s infinite alternate;
+    animation: color_change3 10s infinite alternate;
 }
 
 #loginPrompt{
@@ -483,8 +793,8 @@ input[type=text] {
     100% { top: 1000px}
   }
 @keyframes color_change{
-    from {background-color: rgb(52, 9, 63)}
-    to {background-color: rgb(0, 0, 0)}
+    from {background-color: rgb(255, 255, 255)}
+    to {background-color: rgb(207, 207, 207)}
 }
 
 @keyframes color_change2{

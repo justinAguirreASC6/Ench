@@ -3,18 +3,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="lib/css/ennchdemo.css">
     <script src="lib/js/ench.js" defer></script>
-    <link rel="shortcut icon" type="image/x-icon" href="icon3.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script> 
-       $(document).ready(function(){
-  $(".flip").click(function(){
-    $(".panel").slideToggle("slow");
-    });
-    });
-    </script>
-  
+   
   <head>
+ 
+        
     <title>Ench</title>
       <body>
         <div id="Ench">
@@ -34,10 +28,8 @@
         <nav class="navbar">
 
             <div id="News" class="nvicon">
-              <a href = "NewSite">
-                <img src="assets\NavbarIcons\hotel.svg" width="39" height="32">   
-               
-                </a>
+            
+              <img onclick="hideside()" src="assets\NavbarIcons\hotel.svg" width="39" height="32"> 
             </div> 
            
             <div id="rings" class="nvicon">
@@ -48,7 +40,7 @@
             </div>
       
             <div id="messages" class="nvicon">
-              <a href = "messagesSite">
+              <a href = "ennchmessage.html">
               <img src="assets\NavbarIcons\comment.svg" width="39" height="32">
               </a>
             </div>
@@ -59,12 +51,13 @@
               </a>
             </div>
             <div id="account" class="nvicon">
-              <a>
+               <a href="empty.html">
               <img src="assets\NavbarIcons\acc.svg" width="39" height="32">
               </a>
             </div>
       
             <div  id="settings" class="nvicon">
+
               <a>
               <img src="assets\NavbarIcons\gear-loading.svg" width="39" height="32">
               </a>        
@@ -74,41 +67,368 @@
         <div id="reelcontent">
         </div>
       </div> -->
-      <div id="wndropdown">
-          <a href="#" style="color: white">B y  C a t e g o r y </a>
-          <a href="#"style="color: white"> P o p u l a r</a>
-          <a href="#"style="color: white"> W h a t's  H o t</a>
-          <a href="#"style="color: white"> </a>
-        </div>
+      <style>
+
+          
+          /* Fixed sidenav, full height */
+          .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 50px;
+            margin-left: 42px;
+            -webkit-text-fill-color: white;
+            visibility: hidden;
+          }
+          
+          /* Style the sidenav links and the dropdown button */
+          .sidenav a, .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+          }
+          
+          /* On mouse-over */
+          .sidenav a:hover, .dropdown-btn:hover {
+            color: #f1f1f1;
+          }
+          
+          /* Main content */
+          .main {
+            margin-left: 200px; /* Same as the width of the sidenav */
+            font-size: 20px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+          }
+          
+          /* Add an active class to the active dropdown button */
+          .active {
+            background-color: green;
+            color: white;
+          }
+          
+          /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+          .dropdown-container {
+            display: none;
+            background-color: #262626;
+            padding-left: 8px;
+          }
+          
+          /* Optional: Style the caret down icon */
+          .fa-caret-down {
+            float: right;
+            padding-right: 8px;
+          }
+          
+          /* Some media queries for responsiveness */
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
+          #undera{
+            font-size: 14px;
+            -webkit-text-fill-color: #717171;
+          }
+          #underb{
+            font-size: 14px;
+            -webkit-text-fill-color: #717171;
+          }
+          </style>  
 
 
+          <div class="sidenav">
+            <h4 id="Whatsnew">What's New</h4>
+              <div>
 
-      <div class="card" style="max-width: 30rem;">
-          <div class="card-header"><img src="assets/png/W-Icon-White-Blue-Circle-Outline.png"  width="29" height="27"> Footi
-            
-              <img class="cardicon" src="assets\NavbarIcons\blogging.svg" width="19" height="32">  
-              <img class="cardicon" src="assets\NavbarIcons\notification.svg" width="20" height="32">
-              <img class="cardicon" src="assets\NavbarIcons\e-commerce-like-heart.svg" width="19" height="32">
-              <img class="cardicon" src="assets\NavbarIcons\share.svg" width="20" height="32">
-      
+                  <a href="#Satan">Start-Ups</a>
+                  <a href="#cat" id="undera">By Category</a>
+                  <a href="#loc" id="undera">By Location</a>
+                  <a href="#asc" id="undera">By Association</a>
+                  <a href="#asc" id="undera">By Keyword(s)</a>
+
+                  <a href="#Friends">Users</a>
+                  <a href="fl" id="underb">Associates</a>
+                  <a href="#kat" id="underb">By Category</a>
+                  <a href="#asc" id="underb">By Company</a>
+                  <a href="#dwa" id="underb">By Keyword(s)</a>
+                  
+              </div>
           </div>
-   
-            <div id="keys"> 
-              <div> 
-                <p>
-                  Tech
-                </p>
-                <p>
+          
+        
+          <div id="commentsection">
+              <div id="cmtmsgs">
+                  
+      
+                      
+                <div class="usercomment1">
+                  <img class="person1" src="assets/jpg/person3.jpg" width="30" height="30"> 
+                    <div class="usern"> <strong>John</strong></div> 
+                      <div class="cmt">Nice Idea!</div> 
+                      <img class="like1" src="assets/NavbarIcons/e-commerce-like-heart.svg" width="10px">
+                </div> 
+              </div>
+              <form id="usercmt" onsubmit="event.preventDefault();createmesg()">
+                <input id="cmtinput" type="text" placeholder="Add a comment" style="color: black">
+              </form>
+           
+          </div>
 
-                </p>
+    
+
+        <div class="card" id="card2">
+            <div class="card-header"><img src="assets/png/W-Icon-White-Blue-Circle-Outline.png"  width="29" height="27"> A Start-Up
+              
+                <img class="cardicon"  id="Cmtbtn" src="assets\NavbarIcons\blogging.svg" width="19" height="32">  
+                <a href="ennchmessage.html"><img class="cardicon" src="assets\NavbarIcons\notification.svg" width="20" height="32"></a>
+                <img class="cardicon" src="assets\NavbarIcons\share.svg" width="20" height="32">    
+                <img onclick="hidecomments()"  class="cardicon" src="assets\NavbarIcons\e-commerce-like-heart.svg" width="19" height="32"> 
+                <img class="cardicon" src="assets/NavbarIcons/multiple-users-silhouette.svg" width="20" height="32">
+                
+                <div id="likes" >10020 Likes 
+                  <div id="date">8/15/2019</div>
+                </div>
+         
+                  
+            <div class="story">
+  
+                  <div id="goal"> <strong>Goal</strong>
+                    <div id="goaltxt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    <li> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. </li> <li> Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu 1fugiat nulla pariatur.</li> Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+
+                  <div></div>
+  
+                  <div id="contact"> <strong> Address: 711 5th Ave, New York, NY 10022 </strong> 
+                    <div id="contactnumber">
+                        <strong> (212) 755-6179 </strong>
+                    </div>
+             
+                  </div>
+  
+              <div>
+  
+              </div>
+              <div>
+  
               </div>
             </div>
+  
+                  <div id="keys"> 
+                      <div id="tagcont"> 
+                        <p title="Technology"   id="tech">
+                          
+                        </p>
+                        <p title="Health"   id="health">
+  
+                        </p>  
+                        
+                        <img id="dd"  src="assets/NavbarIcons/sort-down.svg" width="20">
+                      </div>
+                      
+                </div>
+    
+        </div>
 
-            <div class="card-header" id="reps"> representatives</div>
-              <h5 class="card-title">Dark card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <h3 class="readmore">. . .</h3>
-            </div>
+     
+
+          
+        <script> 
+            $(document).ready(function(){
+              $("#dd").click(function(){
+                $(".story").slideToggle("slow");
+                });
+                });
+            </script>
+          
+            <style>
+                * {box-sizing: border-box}
+                body {font-family: Verdana, sans-serif; margin:0}
+                .mySlides {display: none}
+                img {vertical-align: middle;}
+                
+                /* Slideshow container */
+                .slideshow-container {
+                  max-width: 1000px;
+                  position: relative;
+                  margin: auto;
+                }
+                
+                /* Next & previous buttons */
+                .prev, .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  padding: 16px;
+                  margin-top: -22px;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 18px;
+                  transition: 0.6s ease;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+                }
+                
+                /* Position the "next button" to the right */
+                .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
+                
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                  background-color: rgba(0,0,0,0.8);
+                }
+                
+                /* Caption text */
+                .text {
+                  color: #f2f2f2;
+                  font-size: 15px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  text-align: center;
+                }
+                
+                /* Number text (1/3 etc) */
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+                
+                /* The dots/bullets/indicators */
+                .dot {
+                  cursor: pointer;
+                  height: 15px;
+                  width: 15px;
+                  margin: 0 2px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.6s ease;
+                }
+                
+                .active, .dot:hover {
+                  background-color: #717171;
+                }
+                
+                /* Fading animation */
+                .fade {
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 1.5s;
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+                }
+                
+                @-webkit-keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                @keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                  .prev, .next,.text {font-size: 11px}
+                }
+                </style>
+               
+                
+                <div class="slideshow-container">
+                  
+                  
+                  <div class="mySlides ">
+           
+                      <video width="478" controls>
+                        <a href="https://www.youtube.com/watch?v=3V0oqnrml0o"></a>.
+                    </video>
+    
+                  </div>
+                  
+                  <div class="mySlides ">
+              
+                    <img src="assets/jpg/m&m.jpg" style="width:100%">
+             
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <script>
+                    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.getElementsByClassName("undera");
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                    </script>
+                    
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {
+                    slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  
+                }
+                </script>
+           
+        
       </body>
   </head>
 </html>

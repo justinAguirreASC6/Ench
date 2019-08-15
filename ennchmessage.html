@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <script src="ench.js"></script>
+    <script src="profile.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="lib/css/ennchdemo.css">
+    <link rel="stylesheet" href= "lib/css/message.css">
+
+</head>
+<body>
+    <div id="Ench">
+        <div  class="navhide" >
+            <a onclick="hide()" class="btn"><i class="fa fa-home"></i></a>            
+          </div>
+        <div  class="menu" >   
+          <h1 id="littleEnch">E N C H</h1> 
+      </div>
+      
+    </div>
+    <div id="Ench2">
+        <div  class="menu2" >   
+          <h1 class="wnJumbo">W H A T ' S </h1> <h1 class="wnJumbo">N E W</h1>
+      </div>
+    </div>
+    <nav class="navbar">
+
+        <div id="News" class="nvicon">
+        
+          <img onclick="hideside()" src="assets\NavbarIcons\hotel.svg" width="39" height="32"> 
+        </div> 
+       
+        <div id="rings" class="nvicon">
+          <a href = "ringsSite">
+            <img src="assets\NavbarIcons\notification.svg" width="39" height="32">
+          </a>
+         
+        </div>
+  
+        <div id="messages" class="nvicon">
+          <a href = "ennchmessage.html">
+          <img src="assets\NavbarIcons\comment.svg" width="39" height="32">
+          </a>
+        </div>
+  
+        <div id="rankings" class="nvicon">
+          <a href = "rankingsSite">
+          <img src="assets\NavbarIcons\line-chart.svg" width="39" height="32">
+          </a>
+        </div>
+        <div id="account" class="nvicon">
+           <a href="empty.html">
+          <img src="assets\NavbarIcons\acc.svg" width="39" height="32">
+          </a>
+        </div>
+  
+        <div  id="settings" class="nvicon">
+
+          <a>
+          <img src="assets\NavbarIcons\gear-loading.svg" width="39" height="32">
+          </a>        
+        </div>
+          </nav> 
+  <!-- <div id="adreel">
+    <div id="reelcontent">
+    </div>
+  </div> -->
+  <style>
+
+      
+      /* Fixed sidenav, full height */
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 50px;
+        margin-left: 42px;
+        -webkit-text-fill-color: white;
+        visibility: hidden;
+      }
+      
+      /* Style the sidenav links and the dropdown button */
+      .sidenav a, .dropdown-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      /* On mouse-over */
+      .sidenav a:hover, .dropdown-btn:hover {
+        color: #f1f1f1;
+      }
+      
+      /* Main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: green;
+        color: white;
+      }
+      
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+      }
+      
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+      }
+      
+      /* Some media queries for responsiveness */
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      #undera{
+        font-size: 14px;
+        -webkit-text-fill-color: #717171;
+      }
+      #underb{
+        font-size: 14px;
+        -webkit-text-fill-color: #717171;
+      }
+      </style>  
+
+
+      <div class="sidenav">
+        <h4 id="Whatsnew">What's New</h4>
+          <div>
+
+              <a href="#Satan">Start-Ups</a>
+              <a href="#cat" id="undera">By Category</a>
+              <a href="#loc" id="undera">By Location</a>
+              <a href="#asc" id="undera">By Association</a>
+
+              <a href="#Friends">Users</a>
+              <a href="fl" id="underb">Friends List</a>
+              <a href="#kat" id="underb">By Category</a>
+              <a href="#asc" id="underb">By Company</a>
+              
+          </div>
+      </div>
+      
+        
+<div class="container">
+<h3 class=" text-center">Messaging</h3>
+<div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Recent</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar"  placeholder="Search" >
+                <span class="input-group-addon">
+                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list active_chat">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://www.bis-hendersonacademy.com/wp-content/uploads/2017/05/People_Single_2.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Jamal Crawford <span class="chat_date">Oct 11</span></h5>
+                  <p>hfuiheufiu</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT40Hx4wmIZsSYynt-96w8qEogMZnmiZ-lvJcxL1dWVbq9wXI2gEQ" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Kevin Duffy <span class="chat_date">Oct 11</span></h5>
+                  <p>Hi my name is Kevin Duffy. I am interested in hearing more about your start-up.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_L_jNVq1JygDQG-uef0JiNjC0OXC_i5c3X5Ykae7ZPGxT7jxURQ" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Taylor Brennan <span class="chat_date">Oct 10</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://www.bis-hendersonacademy.com/wp-content/uploads/2019/08/Peter-Winspear.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Evan Figueroa <span class="chat_date">Oct 8</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvbqypjkiM1Za4A5MQqCbpWbN1NuzBROrEY4wClEArN1qmYnuBg" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Derrick Jefferson<span class="chat_date">Oct 8</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://previews.123rf.com/images/piksel/piksel1204/piksel120400015/13063145-casual-man-standing.jpg" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Kameron Moody<span class="chat_date">Oct 8</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="data:image/jpeg;base64,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" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Antonio Mason <span class="chat_date">Oct 7</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Hello my name is Gerald, a VC. I'm interested in learning more about your start-up.</p>
+                  <span class="time_date"> 11:01 AM    |    June 9</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Oh, great to meet you Gerald, I'm Luigi. The company we have in the works is an e-pizza company. We have our very own Luigi-coins that you can buy your pizza with online. Just download our app, press the ask button and in 30 minutes we'll send the pizza to you.</p>
+                <span class="time_date"> 11:01 AM    |    June 9</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Sounds great. What're some of the areas in which you need help?</p>
+                  <span class="time_date"> 11:01 AM    |  Yesterday</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Well, we're having trouble driving traffic to our website which means we need advertisement.</p>
+                <span class="time_date"> 11:01 AM    |    Today</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Ok, great I know 5 people that'll be willing to help you out. I'll get back to you with the details.</p>
+                  <span class="time_date"> 11:01 AM    |    Today</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Type a message" />
+              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    
+    </body>
+    </html>
