@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 .biobox{
@@ -176,10 +177,25 @@
 
 }
 #underb{
+=======
+h1{
+    text-align: center;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
 }
 
+div{
+    
+    text-align: center;
+}
+
+#message{
+>>>>>>> 87cd152f90243a79f59da3a79988de451d449e19
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+<<<<<<< HEAD
 .person1{
     border-radius: 100%;
 }
@@ -232,6 +248,8 @@
 }
 
 
+=======
+>>>>>>> 87cd152f90243a79f59da3a79988de451d449e19
 #keys{
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     -webkit-text-fill-color: rgb(238, 238, 238);
@@ -287,7 +305,11 @@
     z-index: 0;  
     background: rgb(0, 0, 0);
     height: 40px;
+<<<<<<< HEAD
   
+=======
+    visibility: hidden;
+>>>>>>> 87cd152f90243a79f59da3a79988de451d449e19
 }
 
 
@@ -821,4 +843,16 @@ input[type=text] {
     }
   }
 
+  #allMessages{
+    height: 67vh;
+    border: 1px solid black;
+    background-color: white;
 
+}
+
+#boxes {
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  

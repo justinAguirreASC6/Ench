@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
   background-color: purple;
 
@@ -167,3 +168,11 @@ img{ max-width:100%;}
   z-index: 20;
   position: absolute;
 }
+=======
+
+
+#mesghd{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 100%;                             
+}
+>>>>>>> 87cd152f90243a79f59da3a79988de451d449e19
